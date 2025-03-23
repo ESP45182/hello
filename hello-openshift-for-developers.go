@@ -9,7 +9,7 @@ import (
 func helloHandler(w http.ResponseWriter, r *http.Request) {
 	response := os.Getenv("RESPONSE")
 	if len(response) == 0 {
-		response = "Hello OpenShift from Barcelona!"
+		response = "Hello SEAT from Red Hat!"
 	}
 
 	fmt.Fprintln(w, response)
